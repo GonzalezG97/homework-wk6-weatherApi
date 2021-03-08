@@ -10,7 +10,18 @@
 <body>
     <h1>Weather Dashboard</h1>
 
-    <div class="card" style="width: 18rem;">
+    <h2>Search for a City</h2>
+
+    <div class="input-group mb-3">
+        
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+    </div>
+
+    <div class="card" style="width: 18rem; float: left;">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">An item</li>
           <li class="list-group-item">A second item</li>
@@ -18,35 +29,55 @@
         </ul>        
     </div>
 
-    <div class="card bg-dark text-white">
-        <img src="..." class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
+    <div class="card bg-dark text-white">        
+        <div>
+          <h5 class="card-title" id="citySearch">City</h5>
+          <p class="card-text" id="tempSearch">Temperature</p>
+          <p class="card-text" id="humidSearch">Humidity</p>
+          <p class="card-text" id="windSearch">Wind Speed</p>
+          <p class="card-text" id="uvSearch">UV</p>
         </div>
     </div>
 
     <div>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 12rem; height: 12rem; float: right; margin-top: 75px; margin-left: 20px;">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title" id="day1">Date</h5>
+              <p class="card-text" id="tempDay1">Temp</p>
+              <p class="card-text" id="humidDay1">Humidity</p>
             </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 12rem; height: 12rem; float: right; margin-top: 75px; margin-left: 20px;">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title" id="day1">Date</h5>
+              <p class="card-text" id="tempDay1">Temp</p>
+              <p class="card-text" id="humidDay1">Humidity</p>
             </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 12rem; height: 12rem; float: right; margin-top: 75px; margin-left: 20px;">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title" id="day1">Date</h5>
+              <p class="card-text" id="tempDay1">Temp</p>
+              <p class="card-text" id="humidDay1">Humidity</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 12rem; height: 12rem; float: right; margin-top: 75px; margin-left: 20px;">
+            <div class="card-body">
+              <h5 class="card-title" id="day1">Date</h5>
+              <p class="card-text" id="tempDay1">Temp</p>
+              <p class="card-text" id="humidDay1">Humidity</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 12rem; height: 12rem; float: right; margin-top: 75px; margin-left: 20px;">
+            <div class="card-body">
+              <h5 class="card-title" id="day1">Date</h5>
+              <p class="card-text" id="tempDay1">Temp</p>
+              <p class="card-text" id="humidDay1">Humidity</p>
             </div>
         </div>
 
