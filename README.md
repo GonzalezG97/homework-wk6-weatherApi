@@ -17,8 +17,14 @@ You can use this project by following the link below.
 
 https://gonzalezg97.github.io/homework-wk6-weatherApi/
 
+![screenshot](Assets/Capture.PNG)
+
 
 
 ### Credits
+
+https://openweathermap.org/api
+
+https://jquery.com/
 
 
