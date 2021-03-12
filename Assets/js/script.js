@@ -7,11 +7,8 @@
 // 
 // 
 
-var apiKey = "67843abc242cc43b51908b533ef15fd4";
+var apiKey = '67843abc242cc43b51908b533ef15fd4';
 
-// Getting a handle on the user input
-// var citySearch = $("#userSearch").val();
-// var searchBtn = $("#searchBtn");
 
 // Getting a handle on the main card items
 var mainCity = $("#citySearch");
@@ -41,19 +38,26 @@ var tempDay5 = $("#tempDay5");
 var humidDay5 = $("#humidDay5");
 
 
-function mainCard (){
-    var citySearch = $("#userSearch").val();
-    var searchBtn = $("#searchBtn");
-    $.ajax({
-    url: `http://api.openweathermap.org/data/2.5/weather?q=${citySearch}&appid=${apiKey}`,
-    method: "GET",
-    dataType: 'json',
-    success: function(result){
-        console.log(result);
-}})};
+
+$(document).ready(function(){
+    $('#searchBtn').click(function(e){
+        e.preventDefault();
+
+        var city = $('#userSearch').val().trim(); 
+
+        $.ajax({
+            url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`            
+        }).then(function(response){
+            console.log(response);
+        
+        }) 
+    });
+});
+
+
     
  
 
-searchBtn.click(mainCard());
+
 
 
